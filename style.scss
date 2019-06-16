@@ -1,0 +1,77 @@
+body
+{
+    background: black;
+
+    .calc
+    {
+        width: 250px;
+        background: black;
+        margin: 0 auto;
+        position: relative;
+        top: 100px;
+        border-radius: 20px;
+        padding-top: 10px;
+
+        input
+        {
+
+            background: black;
+            display: block;
+            width: 90%;
+            border: 1px solid black;
+            outline: none;
+            color: #fff;
+            font-size: 3rem;
+            text-align: right;
+            margin-left: 10px;
+        }
+
+        ::placeholder
+        {
+            color: #fff;
+            text-align: right;
+        }
+
+        div
+        {
+            display: grid;
+            grid-template-columns: repeat(4, 50px);
+            grid-gap: 10px;
+            padding: 0px 10px 20px 10px;
+
+            button
+            {
+                border-radius: 50%;
+                height: 50px;
+                font-size: 1.3rem;
+                color: #fff;
+                outline: none;
+            }
+
+            button.number
+            {
+                background: rgb(49, 47, 47);
+                border: 1px solid rgb(49, 47, 47);
+            }
+
+            button.orange
+            {
+                background: orange;
+                border: 1px solid orange;
+            }
+
+            button.zero
+            {
+                display: grid;
+                grid-column: span 2;
+                border-radius: 40px;
+            }
+
+            button.clear, button.plusMinus, button.percent
+            {
+                background: lightgray;
+                color: black;
+            }
+        }
+    }
+}
